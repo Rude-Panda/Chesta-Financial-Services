@@ -1245,6 +1245,8 @@
     align-items: center;
     gap: 32px;
     flex-shrink: 0;
+
+    scrollbar-width: none;
 }
 
 
