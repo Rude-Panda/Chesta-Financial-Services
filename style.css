@@ -121,7 +121,7 @@
   
   /* HEADER MENU BOX */
 .header-menu-box {
-    background-image: url('/Users/ujjaldas/Desktop/VS Projects/HTML/CFS Chesta Financial Services/New Assets/icons/menu icons/menu.svg');
+    background-image: url('./menu.svg');
     background-position: center;
     background-size: 24px 24px;
     background-repeat: no-repeat;
@@ -143,7 +143,7 @@
 }
 
 .header-menu-box:hover {
-    background-image: url('New Assets/icons/menu icons/menu-bl.svg');
+    background-image: url('./menu-bl.svg');
     background-position: center;
     background-size: 24px 24px;
     background-repeat: no-repeat;
@@ -210,7 +210,7 @@
     background: #091424;
 
 
-    background-image: url('/Users/ujjaldas/Desktop/VS Projects/HTML/CFS Chesta Financial Services/New Assets/icons/menu icons/close-white.svg');
+    background-image: url('./close-white.svg');
     background-position: center;
     background-repeat: no-repeat;
 
@@ -229,7 +229,7 @@
     background: #ffffff;
 
 
-    background-image: url('/Users/ujjaldas/Desktop/VS Projects/HTML/CFS Chesta Financial Services/New Assets/icons/menu icons/close-but.svg');
+    background-image: url('./close-but.svg');
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -581,7 +581,7 @@
 }
 
 .page-2-point-1-icon {
-    background-image: url('/Users/ujjaldas/Desktop/VS Projects/HTML/CFS Chesta Financial Services/New Assets/icons/school.svg');
+    background-image: url('./school.svg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: 24px 24px;
@@ -597,7 +597,7 @@
 }
 
 .page-2-point-2-icon {
-    background-image: url('/Users/ujjaldas/Desktop/VS Projects/HTML/CFS Chesta Financial Services/New Assets/icons/favorite.svg');
+    background-image: url('./favorite.svg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: 24px 24px;
@@ -613,7 +613,7 @@
 }
 
 .page-2-point-3-icon {
-    background-image: url('/Users/ujjaldas/Desktop/VS Projects/HTML/CFS Chesta Financial Services/New Assets/icons/acute.svg');
+    background-image: url('./acute.svg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: 24px 24px;
@@ -629,7 +629,7 @@
 }
 
 .page-2-point-4-icon {
-    background-image: url('/Users/ujjaldas/Desktop/VS Projects/HTML/CFS Chesta Financial Services/New Assets/icons/loyalty.svg');
+    background-image: url('./loyalty.svg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: 24px 24px;
@@ -922,7 +922,7 @@
 
 
 .page-4-element-1-icon {
-    background: url('/Users/ujjaldas/Desktop/VS Projects/HTML/CFS Chesta Financial Services/New Assets/icons/volunteer_activism.svg');
+    background: url('./volunteer_activism.svg');
 
 
     background-size: 64px 64px;
@@ -942,7 +942,7 @@
 }
 
 .page-4-element-2-icon {
-    background: url('/Users/ujjaldas/Desktop/VS Projects/HTML/CFS Chesta Financial Services/New Assets/icons/hotel_class.svg');
+    background: url('./hotel_class.svg');
 
 
     background-size: 64px 64px;
@@ -961,7 +961,7 @@
 }
 
 .page-4-element-3-icon {
-    background: url('/Users/ujjaldas/Desktop/VS Projects/HTML/CFS Chesta Financial Services/New Assets/icons/heart_check.svg');
+    background: url('./heart_check.svg');
 
 
     background-size: 64px 64px;
@@ -980,7 +980,7 @@
 }
 
 .page-4-element-4-icon {
-    background: url('/Users/ujjaldas/Desktop/VS Projects/HTML/CFS Chesta Financial Services/New Assets/icons/emoji_events.svg');
+    background: url('./emoji_events.svg');
 
 
     background-size: 64px 64px;
@@ -999,7 +999,7 @@
 }
 
 .page-4-element-1-icon:hover {
-    background: url('/Users/ujjaldas/Desktop/VS Projects/HTML/CFS Chesta Financial Services/New Assets/icons/interact/volunteer_activism.svg');
+    background: url('./volunteer_activism_interact.svg');
 
     background-size: 64px 64px;
     background-repeat: no-repeat;
@@ -1017,7 +1017,7 @@
 }
 
 .page-4-element-2-icon:hover {
-    background: url('/Users/ujjaldas/Desktop/VS Projects/HTML/CFS Chesta Financial Services/New Assets/icons/interact/hotel_class.svg');
+    background: url('./hotel_class_interact.svg');
 
     background-size: 64px 64px;
     background-repeat: no-repeat;
@@ -1035,7 +1035,7 @@
 }
 
 .page-4-element-3-icon:hover {
-    background: url('/Users/ujjaldas/Desktop/VS Projects/HTML/CFS Chesta Financial Services/New Assets/icons/interact/heart_check.svg');
+    background: url('./heart_check_interact.svg');
 
   background-size: 64px 64px;
   background-repeat: no-repeat;
@@ -1053,7 +1053,7 @@
 }
 
 .page-4-element-4-icon:hover {
-    background: url('/Users/ujjaldas/Desktop/VS Projects/HTML/CFS Chesta Financial Services/New Assets/icons/interact/emoji_events.svg');
+    background: url('./emoji_events_interact.svg');
 
     background-size: 64px 64px;
     background-repeat: no-repeat;
