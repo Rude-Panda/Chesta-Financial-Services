@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
       copyToClipboard(emailElement.textContent);
       emailElement.textContent = "Email Copied!";
       setTimeout(() => {
-        emailElement.textContent = "crkfinance1@gmail.com"; // Replace this with the original email
+        emailElement.textContent = "manish@chestafin.com"; // Replace this with the original email
       }, 3000); // Replace '3000' with the duration in milliseconds you want "Copied!" to be displayed
     });
   
