@@ -22,7 +22,7 @@
   }
 
   svg {
-      background: transparent;
+    background: transparent;
   }
 
   img {
@@ -1360,6 +1360,31 @@
 .content-frame-button-linked:hover {
     border-radius: 8px;
     border: 1px solid #21174F;
-    background: #091424;
+    background-color: #091424;
     box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.08);
+}
+
+#content-frame-button-linked-id {
+    background: transparent;
+}
+
+/* LOVE CONTAINER */
+
+.love-container {
+    display: flex;
+    padding: 100px;
+    align-items: center;
+    gap: 10px;
+}
+
+
+#love-container-id {
+    color: #FFF;
+    font-family: Lato;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px; /* 133.333% */
+
+    cursor: pointer;
 }
