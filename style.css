@@ -8,7 +8,33 @@
   html {
     font-size: 62.5%;
   }
-  
+
+
+@font-face {
+    font-family: Lato;
+    font-weight: 400;
+    src: url('.Lato-Regular.ttf');
+}
+
+@font-face {
+    font-family: Lato;
+    font-weight: 700;
+    src: url('.Lato-Bold.ttf');
+}
+
+@font-face {
+    font-family: Lato;
+    font-weight: 900;
+    src: url('.Lato-Black.ttf');
+}
+
+@font-face {
+    font-family: Inter;
+    font-weight: 900;
+    src: url('.Inter-Black.ttf');
+}
+
+
   @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap");
   
   @import url('https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap');
