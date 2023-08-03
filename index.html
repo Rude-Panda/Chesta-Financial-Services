@@ -155,9 +155,12 @@
                     <p id="page-1-left-bottom-1">
                         Our team of financial superheroes simplifies the finance maze, turning it into a thrilling treasure hunt towards your goals. Join us on this exhilarating journey to financial success. 
                     </p>
-                    <a href="#" id="page-1-left-bottom-2">
-                        Contact Us
-                    </a>
+
+                    <!-- BUTTON -->
+                    <div class="contact-form-button-container">
+                        <button type="button" value="ContactUs" id="contact-us-button">Contact Us</button>
+                    </div>
+
                 </div>
             </div>
             <!-- PAGE - 1 - RIGHT -->
@@ -541,9 +544,11 @@
 
         </div>
 
-        <a href="#" id="page-1-left-bottom-2">
-            Contact Us
-        </a>
+
+        <!-- BUTTON -->
+        <div class="contact-form-button-container">
+            <button type="button" value="ContactUs" id="contact-us-button">Contact Us</button>
+        </div>
 
     </section>
 
@@ -657,7 +662,69 @@
     </div>
 
 
+    <!-- CONTACT US POPUP -->
 
+    <div class="overlay" id="overlay-id" >
+
+        <div class="contact-pop-container">
+
+            <!-- HEADING -->
+            <div class="contact-heading">
+                <p id="contact-heading-id">
+                    CONTACT US
+                </p>
+            </div>
+
+
+            <!-- NAME -->
+            <div class="contact-name">
+                <input type="text" id="name" name="name" placeholder="Name" required>
+            </div>
+
+            <!-- PHONE -->
+            <div class="contact-phone-number">
+                <input type="text" id="phone-no" name="Phone Number" placeholder="Phone Number" required>
+            </div>
+
+            <!-- EMAIL -->
+            <div class="contact-email">
+                <input type="email" id="email" name="email" placeholder="Email ID" required>
+            </div>
+
+            <!-- SERVICES -->
+            <!-- <div class="contact-services-drop">
+                <div class="services-label">
+                    <p id="services-label-id">Select the services you are interested in</p>
+                </div>
+                <div class="services-drop-icon">
+                    <img id="services-drop-icon-id" src="#">
+                </div>
+            </div> -->
+
+            <select id="select-services" name="select-services">
+                <option value="" disabled selected hidden>Please select the services you are interested in</option>
+                <option value="Unsecured Funding">Unsecured Funding</option>
+                <option value="CC/OD Limits">CC/OD Limits</option>
+                <option value="Short Term Unsecure Funding for 4 Months">Short Term Unsecure Funding for 4 Months</option>
+                <option value="Loan Against Property">Loan Against Property</option>
+                <option value="Lease Rental Discounting">Lease Rental Discounting</option>
+                <option value="Housing Loan">Housing Loan</option>
+                <option value="Unsecured Funding">Unsecured Funding</option>
+                <option value="Medi Claims and Life Insurance">Medi Claims and Life Insurance</option>
+            </select>
+
+            <!-- BUTTON -->
+            <div class="contact-form-button-container">
+                <button type="button" value="Submit" class="contact-form-button">Submit</button>
+            </div>
+
+        </div>
+
+
+
+
+
+        
     <script src="script.js"></script>
   </body>
 </html>

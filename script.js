@@ -168,3 +168,62 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+
+// CONTACT POPUP
+// const openFormButton = document.getElementById('contact-us-button');
+// const formOverlay = document.getElementById('overlay-id');
+
+// // Show or hide the form overlay when the button is clicked
+// openFormButton.addEventListener('click', function() {
+//   formOverlay.style.display = 'flex';
+// });
+
+// // Hide the form overlay when clicking anywhere outside the form or the button
+// document.addEventListener('click', function(event) {
+//   if (!formOverlay.contains(event.target) && event.target !== openFormButton) {
+//     formOverlay.style.display = 'none';
+//   }
+// });
+
+// // Close the form overlay when clicking on the overlay itself
+// formOverlay.addEventListener('click', function(event) {
+//   if (event.target === formOverlay) {
+//     formOverlay.style.display = 'none';
+//   }
+// });
+
+// // Prevent the form overlay from closing when clicking inside it
+// formOverlay.querySelector('.form-container').addEventListener('click', function(event) {
+//   event.stopPropagation();
+// });
+
+const openFormButton = document.getElementById('contact-us-button');
+const formOverlay = document.getElementById('overlay-id');
+
+// Show or hide the form overlay when the button is clicked
+openFormButton.addEventListener('click', function() {
+  formOverlay.style.display = 'flex';
+});
+
+// Hide the form overlay when clicking anywhere outside the form or the button
+document.addEventListener('click', function(event) {
+  if (!formOverlay.contains(event.target) && event.target !== openFormButton) {
+    formOverlay.style.display = 'none';
+  }
+});
+
+// Close the form overlay when clicking on the overlay itself
+formOverlay.addEventListener('click', function(event) {
+  if (event.target === formOverlay) {
+    formOverlay.style.display = 'none';
+  }
+});
+
+// Prevent the form overlay from closing when clicking inside it
+formOverlay.addEventListener('click', function(event) {
+  event.stopPropagation();
+});
+
+
+
+
