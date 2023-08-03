@@ -1,30 +1,3 @@
-
-// FOR COPYING EMAIL
-document.addEventListener("DOMContentLoaded", function () {
-    const emailElement = document.getElementById("content-frame-button-mail-id");
-  
-    emailElement.addEventListener("click", function () {
-      copyToClipboard(emailElement.textContent);
-      emailElement.textContent = "Email Copied!";
-      setTimeout(() => {
-        emailElement.textContent = "manish@chestafin.com"; // Replace this with the original email
-      }, 3000); // Replace '3000' with the duration in milliseconds you want "Copied!" to be displayed
-    });
-  
-    // Function to copy the text to the clipboard
-    function copyToClipboard(text) {
-      const textarea = document.createElement("textarea");
-      textarea.value = text;
-      document.body.appendChild(textarea);
-      textarea.select();
-      document.execCommand("copy");
-      document.body.removeChild(textarea);
-    }
-});
-
-
-
-  
 // FOR COPYING PHONE NUMBER
 document.addEventListener("DOMContentLoaded", function () {
     const emailElement = document.getElementById("content-frame-button-call-id");
@@ -170,33 +143,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 // CONTACT POPUP
-// const openFormButton = document.getElementById('contact-us-button');
-// const formOverlay = document.getElementById('overlay-id');
-
-// // Show or hide the form overlay when the button is clicked
-// openFormButton.addEventListener('click', function() {
-//   formOverlay.style.display = 'flex';
-// });
-
-// // Hide the form overlay when clicking anywhere outside the form or the button
-// document.addEventListener('click', function(event) {
-//   if (!formOverlay.contains(event.target) && event.target !== openFormButton) {
-//     formOverlay.style.display = 'none';
-//   }
-// });
-
-// // Close the form overlay when clicking on the overlay itself
-// formOverlay.addEventListener('click', function(event) {
-//   if (event.target === formOverlay) {
-//     formOverlay.style.display = 'none';
-//   }
-// });
-
-// // Prevent the form overlay from closing when clicking inside it
-// formOverlay.querySelector('.form-container').addEventListener('click', function(event) {
-//   event.stopPropagation();
-// });
-
 const openFormButton = document.getElementById('contact-us-button');
 const formOverlay = document.getElementById('overlay-id');
 
@@ -226,4 +172,9 @@ formOverlay.addEventListener('click', function(event) {
 
 
 
-
+// DIRECT MAIL
+document.getElementById('content-frame-button-mail-cl-id').addEventListener('click', function() {
+  const prefilledMessage = encodeURIComponent("Hello, I am interested in your product. Please send me more information.");
+  const mailToLink = "mailto:manish@chestafin.com?subject=Regarding%20Your%20Product&body=" + prefilledMessage;
+  window.location.href = mailToLink;
+});

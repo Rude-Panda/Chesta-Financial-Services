@@ -45,25 +45,26 @@
 
 
   
-  a {
-    text-decoration: none;
-  }
+a {
+  text-decoration: none;
+  background: transparent;
+}
 
-  p {
+p {
     background: transparent;
-  }
+}
 
-  svg {
+svg {
     background: transparent;
-  }
+}
 
-  img {
+img {
     background: transparent;
-  }
+}
 
-  div {
+div {
     background: transparent;
-  }
+}
   
 /* @media  only screen and (max-width:800px) {
 
@@ -464,51 +465,6 @@
     font-weight: 400;
     line-height: 28px; /* 140% */
 }
-
-
-
-/* #page-1-left-bottom-2 {
-    display: flex;
-    width: 296px;
-    height: 72px;
-    padding: 20px 42px;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-
-    border-radius: 8px;
-    background: #FFF;
-    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.08);
-
-    color: #091424;
-    font-family: Lato;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 24px;
-
-    transition: 300ms;
-
-} */
-
-/* #page-1-left-bottom-2:hover {
-    border-radius: 8px;
-    border: 1px solid #21174F;
-    background: #6A52CE;
-    box-shadow: 0px 4px 0px 0px #21174F;
-
-    border-radius: 8px;
-    border: 1px solid #21174F;
-    background: #091424;
-    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.08);
-
-    color: #FFF;
-    font-family: Lato;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 24px; 
-} */
 
 
 /* PAGE 2 */
@@ -1362,11 +1318,12 @@
     
 }
 
-.content-frame-button-mail, .content-frame-button-call {
+
+.content-frame-button-call {
     cursor: copy;
 }
 
-.content-frame-button-linked {
+.content-frame-button-linked, .content-frame-button-mail {
     cursor: pointer;
 }
 
