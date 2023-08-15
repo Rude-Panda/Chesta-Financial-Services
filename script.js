@@ -144,6 +144,6 @@ document.getElementById('content-frame-button-mail-cl-id').addEventListener('cli
 
 
 // MOBILE VERSION
-if (isMobile) {
-  window.location.href = 'm.chestafin.com';
-}
+// if (isMobile) {
+//   window.location.href = 'm.chestafin.com';
+// }
