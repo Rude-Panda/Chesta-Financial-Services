@@ -145,10 +145,10 @@ document.getElementById('content-frame-button-mail-cl-id').addEventListener('cli
 
 // MOBILE VERSION
 if (isMobile) {
-  window.location.href = 'm.chestafin.com';
+  window.location.href = 'http://m.chestafin.com/';
 }
 
 if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-    window.location.href = 'https://m.chestafin.com';
+    window.location.href = 'http://m.chestafin.com/';
 }
 
