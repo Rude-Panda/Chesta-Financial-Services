@@ -145,5 +145,5 @@ document.getElementById('content-frame-button-mail-cl-id').addEventListener('cli
 
 // MOBILE VERSION
 if (isMobile) {
-  window.location.href = 'rude-panda.github.io/CFS-M';
+  window.location.href = 'm.chestafin.com';
 }
