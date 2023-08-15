@@ -6,10 +6,10 @@
     <title>Chesta Financial Services</title>
     <link rel="stylesheet" href="style.css"/>
     <script>
-        const isMobile = window.innerWidth <= 768;
-        if (isMobile) {
-          window.location.href = 'm.chestafin.com';
-        }
+        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+    // User is on a mobile device, redirect to mobile site
+    window.location.href = '/https://github.com/Rude-Panda/CFS-M'; // Change to your mobile repository URL
+  }
     </script>
   </head>
 
