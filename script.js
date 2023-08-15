@@ -7,10 +7,10 @@ document.addEventListener("DOMContentLoaded", function () {
       emailElement.textContent = "Number Copied!";
       setTimeout(() => {
         emailElement.textContent = "+91-8595181148"; // Replace this with the original email
-      }, 3000); // Replace '3000' with the duration in milliseconds you want "Copied!" to be displayed
+      }, 3000);
     });
   
-    // Function to copy the text to the clipboard
+    
     function copyToClipboard(text) {
       const textarea = document.createElement("textarea");
       textarea.value = text;
@@ -22,42 +22,6 @@ document.addEventListener("DOMContentLoaded", function () {
 });
   
 
-
-  
-// CAROSEL BUTTONS
-// document.addEventListener("DOMContentLoaded", function () {
-//   const carousel = document.querySelector(".carousel");
-//   const elementsContainer = document.querySelector(".elements-container");
-//   const elements = document.querySelectorAll(".element");
-//   const prevButton = document.querySelector(".prev-button");
-//   const nextButton = document.querySelector(".next-button");
-//   const gap = 20; // Adjust the gap value as needed
-
-//   let currentIndex = 0;
-
-//   function updateCarouselPosition() {
-//     const elementWidth = elements[0].offsetWidth + gap;
-//     const distanceToCurrent = currentIndex * -elementWidth;
-//     elementsContainer.style.transform = `translateX(${distanceToCurrent}px)`;
-//   }
-
-//   prevButton.addEventListener("click", function () {
-//     currentIndex = (currentIndex - 1 + elements.length) % elements.length;
-//     updateCarouselPosition();
-//   });
-
-//   nextButton.addEventListener("click", function () {
-//     currentIndex = (currentIndex + 1) % elements.length;
-//     updateCarouselPosition();
-//   });
-
-//   // Initially show the first element
-//   updateCarouselPosition();
-// });
-
-
-
-
 // NEW CAROUSEL
 window.addEventListener("load", function () {
   const carousel = document.querySelector(".carousel");
@@ -65,8 +29,7 @@ window.addEventListener("load", function () {
   const elements = document.querySelectorAll(".element");
   const prevButton = document.querySelector(".prev-button");
   const nextButton = document.querySelector(".next-button");
-  const gap = 20; // Adjust the gap value as needed
-
+  const gap = 20; 
   let currentIndex = 0;
 
   function updateCarouselPosition() {
@@ -90,7 +53,6 @@ window.addEventListener("load", function () {
     updateCarouselPosition();
   });
 
-  // Initially show the first element
   updateCarouselPosition();
 });
 
@@ -106,11 +68,11 @@ document.addEventListener("DOMContentLoaded", function () {
   const closeButton = document.getElementById("menu-icon-id");
 
   function disableScroll() {
-    // Get the current scroll position
+
     const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
     const scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
 
-    // Save the current scroll position in the body style
+
     document.body.style.overflow = "hidden";
     document.body.style.position = "fixed";
     document.body.style.top = `-${scrollTop}px`;
@@ -118,7 +80,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   function enableScroll() {
-    // Restore the original scroll position
+
     const scrollTop = parseFloat(document.body.style.top) || 0;
     const scrollLeft = parseFloat(document.body.style.left) || 0;
 
@@ -146,26 +108,26 @@ document.addEventListener("DOMContentLoaded", function () {
 const openFormButton = document.getElementById('contact-us-button');
 const formOverlay = document.getElementById('overlay-id');
 
-// Show or hide the form overlay when the button is clicked
+
 openFormButton.addEventListener('click', function() {
   formOverlay.style.display = 'flex';
 });
 
-// Hide the form overlay when clicking anywhere outside the form or the button
+
 document.addEventListener('click', function(event) {
   if (!formOverlay.contains(event.target) && event.target !== openFormButton) {
     formOverlay.style.display = 'none';
   }
 });
 
-// Close the form overlay when clicking on the overlay itself
+
 formOverlay.addEventListener('click', function(event) {
   if (event.target === formOverlay) {
     formOverlay.style.display = 'none';
   }
 });
 
-// Prevent the form overlay from closing when clicking inside it
+
 formOverlay.addEventListener('click', function(event) {
   event.stopPropagation();
 });
@@ -178,3 +140,12 @@ document.getElementById('content-frame-button-mail-cl-id').addEventListener('cli
   const mailToLink = "mailto:manish@chestafin.com?subject=Regarding%20Your%20Product&body=" + prefilledMessage;
   window.location.href = mailToLink;
 });
+
+
+
+// MOBILE VERSION
+const isMobile = window.innerWidth <= 768;
+
+    if (isMobile) {
+      window.location.href = 'url-to-your-mobile-site';
+    }

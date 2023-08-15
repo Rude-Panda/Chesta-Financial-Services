@@ -1415,30 +1415,6 @@ div {
     text-transform: uppercase;
 }
 
-/* .contact-name {
-    display: flex;
-    width: 680.5px;
-    padding: 12px 16px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 10px;
-
-    border-radius: 8px;
-    border: 1px solid #091424;
-}
-
-#contact-name-id {
-    align-self: stretch;
-    color: #C2DBFF;
-    font-family: Lato;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 48px; 
-} */
-
-
 
 input[name]{
     display: flex;
