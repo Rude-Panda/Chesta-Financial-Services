@@ -3,11 +3,11 @@
     padding: 0;
     box-sizing: border-box;
     background: #3376DB;
-  }
+}
 
-  html {
+html {
     font-size: 62.5%;
-  }
+}
 
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap");
   
@@ -68,32 +68,32 @@ div {
 
   /* HEADER */
   
-  .header-inner-container {
+.header-inner-container {
       display: flex;
       width: 100%;
       justify-content: space-between;
       align-items: center;
-  }
+}
   
-  .header-container {
+.header-container {
       display: flex;
       width: 100%;
       padding: 40px 60px 40px 40px;
       flex-direction: column;
       align-items: flex-start;
       gap: -8px;
-  }
-  
-  
+}
+
+
   /* HEADER LOGO CAPTION */
   
-  .header-logo-letters {
+.header-logo-letters {
       display: flex;
       align-items: flex-start;
       gap: -20px;
-  }
+}
   
-  #logo-C {
+#logo-C {
       color: #FFF;
       font-family: Inter;
       font-size: 80px;
@@ -102,9 +102,9 @@ div {
       line-height: normal;
   
       background: transparent;
-  }
+}
   
-  #logo-F {
+#logo-F {
       color: #231F20;
       font-family: Inter;
       font-size: 80px;
@@ -113,9 +113,9 @@ div {
       line-height: normal;
   
       background: transparent;
-  }
+}
   
-  #logo-S {
+#logo-S {
       color: #FFF;
       text-shadow: -2px 0px 4px 0px rgba(16, 32, 56, 0.40);
       font-family: Inter;
@@ -125,9 +125,9 @@ div {
       line-height: normal;
   
       background: transparent;
-  }
+}
   
-  .header-logo-caption {
+.header-logo-caption {
     display: flex;
     padding: 0px 4px;
     flex-direction: column;
@@ -135,14 +135,14 @@ div {
     gap: 10px;
   }
   
-  #header-logo-caption-text {
+#header-logo-caption-text {
     color: #fff;
     font-family: Lato;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
     line-height: 24px; /* 120% */
-  }
+}
   
   
   
@@ -683,7 +683,7 @@ div {
 
 .services-element {
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
     min-width: 300px; 
     max-width: 700px; 
     padding: 42px;
@@ -696,9 +696,9 @@ div {
 
     margin-right: 40px;
 
-    flex: 0 0 auto;
-    width: 100%;
-    height: auto;
+    flex: 0 0 auto; 
+    width: 100%; 
+    height: auto; 
     min-height: 400px;
 }
 
@@ -734,8 +734,6 @@ div {
     text-transform: uppercase;
     background: transparent;
 }
-  
-  
   
 .services-element-content {
     display: flex;
@@ -787,18 +785,6 @@ div {
     background: transparent;
 }
   
-
-
-
-
-.elements-container {
-    display: flex;
-    justify-content: flex-start;
-    align-content: center;
-
-    transition: transform 0.3s ease;
-  
-}
 
 /* PAGE 4 */
 
