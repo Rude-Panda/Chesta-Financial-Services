@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
       copyToClipboard(emailElement.textContent);
       emailElement.textContent = "Number Copied!";
       setTimeout(() => {
-        emailElement.textContent = "+91-8595181148"; // Replace this with the original email
+        emailElement.textContent = "+91-8595181148";
       }, 3000);
     });
   
@@ -21,44 +21,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
   
-
-// NEW CAROUSEL
-window.addEventListener("load", function () {
-  const carousel = document.querySelector(".carousel");
-  const elementsContainer = document.querySelector(".elements-container");
-  const elements = document.querySelectorAll(".element");
-  const prevButton = document.querySelector(".prev-button");
-  const nextButton = document.querySelector(".next-button");
-  const gap = 20; 
-  let currentIndex = 0;
-
-  function updateCarouselPosition() {
-    const carouselWidth = carousel.offsetWidth;
-    const elementsInView = Math.floor(carouselWidth / (elements[0].offsetWidth + gap));
-    const maxIndex = elements.length - elementsInView;
-    currentIndex = Math.max(0, Math.min(currentIndex, maxIndex));
-
-    const elementWidth = elements[0].offsetWidth + gap;
-    const distanceToCurrent = currentIndex * -elementWidth;
-    elementsContainer.style.transform = `translateX(${distanceToCurrent}px)`;
-  }
-
-  prevButton.addEventListener("click", function () {
-    currentIndex = Math.max(0, currentIndex - 1);
-    updateCarouselPosition();
-  });
-
-  nextButton.addEventListener("click", function () {
-    currentIndex = Math.min(currentIndex + 1, elements.length - 1);
-    updateCarouselPosition();
-  });
-
-  updateCarouselPosition();
-});
-
-
-
-
 
 
 // OVER LAY MENU
@@ -152,3 +114,23 @@ if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
     window.location.href = 'http://m.chestafin.com/';
 }
 
+// SERVICES CAROUSEL
+const elementsContainer = document.querySelector('.services-elements');
+const elements = document.querySelectorAll('.services-element');
+const elementWidth = elements[0].offsetWidth + 40;
+let currentIndex = 0;
+
+function updateCarousel() {
+  currentIndex = (currentIndex + 1) % elements.length;
+
+  if (currentIndex === 0) {
+    elementsContainer.style.transition = 'none';
+    elementsContainer.style.transform = `translateX(0)`;
+    elementsContainer.offsetHeight;
+    elementsContainer.style.transition = '';
+  } else {
+    elementsContainer.style.transform = `translateX(-${currentIndex * elementWidth}px)`;
+  }
+}
+
+setInterval(updateCarousel, 2000);
